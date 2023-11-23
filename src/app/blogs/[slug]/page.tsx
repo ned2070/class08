@@ -8,7 +8,6 @@ type blogPostParams = {
 };
 
 export default function Page({ params }: blogPostParams) {
-  //1234
   const post = getPostsBySlug(params.slug);
 
   if (!post) {
